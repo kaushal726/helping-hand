@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Autour+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.bg-rgb {
+  background-color: rgb(89, 151, 226);
+}
+
+.font {
+  font-family: "Pacifico", serif;
+}
+
+::placeholder {
+  color: rgb(14, 1, 1);
+}
