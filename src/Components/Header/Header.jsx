@@ -10,9 +10,10 @@ let Header = () => {
       </section>
       <section className="w-3/4 flex flex-col items-end mr-28 justify-center">
         <section className="flex m-4 relative">
-          <p className="cursor-pointer text-white font-medium">Register</p>
+          <a className=" text-white font-medium hover:underline-offset-2 hover:underline" href="#">Register</a>
+          {/* <p className="cursor-pointer text-white font-medium">Register</p> */}
           <span className="px-4 text-xl text-white font-light">|</span>
-          <p className="cursor-pointer pr-8 text-white font-medium">Sign in</p>
+          <a className="hover:underline-offset-2 hover:underline pr-8 text-white font-medium" href="#">Sign in</a>
           <input
             className=" appearance-none w-80 h-8 border border-2 rounded-lg bg-rgb input-search text-white"
             type="text"

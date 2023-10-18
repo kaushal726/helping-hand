@@ -36,15 +36,13 @@ const Footer = () => {
                 <section className="w-3/4 flex flex-col justify-start items-start space-y-2">
                     <section>
                         <p className="text-white">
-                            Retail Trust is a registered charity in England and Wales
-                            (1090136) and in Scotland (SC039684). Company No 4254201 (Company
-                            limited by Guarantee) Registered England & Wales. Retail Trust,
-                            The Form Rooms, Second Floor, 22 Tower Street, London, WC2H 9NS.
+
+                            Engaging in digital philanthropy, the charitable organization is presently under the guidance of Kaushal and his dedicated team located in India. While there are considerations for establishing a physical presence, this initiative is temporarily paused.
                         </p>
                     </section>
-                    <section className="text-white font-light text-xs">Site powered by Webvision Cloud</section>
+                    <section className="text-white font-light text-xs">© 2023 Kaushal Raj. All rights reserved.</section>
                 </section>
-                <section className="text-white w-1/4 flex justify-center items-center ">
+                <section className="text-white w-1/4 flex justify-end pr-2 items-center ">
                     <img className="h-32" src={hhImg2} />
                 </section>
             </section>
