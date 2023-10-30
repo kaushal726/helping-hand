@@ -6,13 +6,13 @@ import hhImg2 from "../../assets/Logo/hh2.png"
 const Footer = () => {
     return (
         <section className=" w-full">
-            <section className="bg-rgb h-80 flex flex-col justify-between px-16  ">
-                <section className="flex flex-row w-full justify-between h-3/4  ">
+            <section className="bg-rgb md:h-80 h-3/4  flex-col flex justify-between md:px-16  ">
+                <section className="flex md:flex-row flex-col w-full justify-between h-3/4  ">
                     <section className="w-1/4 flex justify-center items-center ">
                         <img className="h-48" src={hhImg} />
                     </section>
-                    <section className="flex flex-col w-3/4 justify-center items-end mr-8  ">
-                        <section className="flex space-x-5 text-white font-bold  ">
+                    <section className="flex md:flex-col flex-row w-3/4 justify-center items-end mr-8  ">
+                        <section className="flex md:flex-row flex-col space-x-5 text-white font-bold  ">
                             <p>Your health and wellbeing </p>
                             <p>Helping your business</p>
                             <p>Supported living</p>
@@ -24,7 +24,7 @@ const Footer = () => {
                         </section>
                     </section>
                 </section>
-                <section className="flex justify-start text-white font-medium items-center mt-4 space-x-6 h-1/4">
+                <section className="flex md:flex-row flex-col justify-start text-white font-medium items-center mt-4 space-x-6 h-1/4">
                     <p>Privacy notice </p>
                     <p>Terms and conditions</p>
                     <p>Cookies policy</p>

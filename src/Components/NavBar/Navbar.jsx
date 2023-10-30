@@ -2,13 +2,18 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import "./Navbar.css";
+import { useRef } from 'react'
+import LoadingBar from 'react-top-loading-bar'
+
 const Navbar = () => {
+    const ref = useRef(null)
     return (
         <>
+            <LoadingBar color='black' ref={ref} />
             <nav className="w-full ">
                 <div className="w-full flex items-center justify-center h-12 bg-black text-white ">
                     <ul className="flex items-center justify-center space-x-6 h-12">
-                        <li className="flex items-center justify-center ">
+                        <li className="flex items-center justify-center " onClick={() => ref.current.complete()}>
                             <NavLink
                                 className="h-12 flex items-center justify-center text-2xl "
                                 to="/"
@@ -16,7 +21,7 @@ const Navbar = () => {
                                 {AiFillHome}
                             </NavLink>
                         </li>
-                        <li className="">
+                        <li className="" onClick={() => ref.current.complete()}>
                             <NavLink
                                 className="h-12 flex items-center justify-center "
                                 to="/your-health-and-wellbeing"
@@ -24,7 +29,7 @@ const Navbar = () => {
                                 Your Health and WellBeing
                             </NavLink>
                         </li>
-                        <li className="">
+                        <li className="" onClick={() => ref.current.complete()}>
                             <NavLink
                                 className="h-12 flex items-center justify-center "
                                 to="/financial-aid"
@@ -32,7 +37,7 @@ const Navbar = () => {
                                 Financial Aid
                             </NavLink>
                         </li>
-                        <li className="">
+                        <li className="" onClick={() => ref.current.complete()}>
                             <NavLink
                                 className="h-12 flex items-center justify-center "
                                 to="/helping-your-business"
@@ -40,7 +45,7 @@ const Navbar = () => {
                                 Helping your Business
                             </NavLink>
                         </li>
-                        <li className="">
+                        <li className="" onClick={() => ref.current.complete()}>
                             <NavLink
                                 className="h-12 flex items-center justify-center "
                                 to="/supported-living"
@@ -48,7 +53,7 @@ const Navbar = () => {
                                 Supported Living
                             </NavLink>
                         </li>
-                        <li className="">
+                        <li className="" onClick={() => ref.current.complete()}>
                             <NavLink
                                 className="h-12 flex items-center justify-center "
                                 to="/get-involved"
@@ -56,7 +61,7 @@ const Navbar = () => {
                                 Get Involved
                             </NavLink>
                         </li>
-                        <li className="">
+                        <li className="" onClick={() => ref.current.complete()}>
                             <NavLink
                                 className="h-12 flex items-center justify-center "
                                 to="/about-us"
